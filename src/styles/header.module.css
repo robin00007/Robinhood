@@ -1,0 +1,124 @@
+.container {
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  position: fixed;
+  z-index: 100;
+}
+.navbar {
+  width: 75%;
+  height: 50px;
+  border: 2px solid #272837;
+  background-color: #1d1e29;
+  border-radius: 10px;
+  display: flex;
+  padding: 15px;
+  box-sizing: border-box;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+}
+.roller {
+  animation: roller 3s ease-in-out infinite;
+  background-color: transparent;
+  z-index: 10;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+@keyframes roller {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+FontAwesomeIcon {
+  margin: 0px 10px;
+}
+.menuButton {
+  background-color: transparent;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+}
+.menuBar {
+  height: 100%;
+  aspect-ratio: 1.5/1;
+  /* background-color: red; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.top {
+  width: 50%;
+  background-color: white;
+  height: 20%;
+  border-radius: 10px;
+  transition-duration: 1s;
+
+  /* position: absolute; */
+}
+.middle {
+  width: 75%;
+  background-color: white;
+  height: 20%;
+  border-radius: 10px;
+  transition-duration: 1s;
+
+  /* position: absolute; */
+}
+.bottom {
+  width: 100%;
+  background-color: white;
+  height: 20%;
+  border-radius: 10px;
+  transition-duration: 1s;
+
+  /* position: absolute; */
+}
+.download {
+  margin: 0px 25px;
+  /* margin-bottom: 5px; */
+  cursor: pointer;
+}
+.menuBar {
+  cursor: pointer;
+}
+.clockwise {
+  width: 100%;
+  transform-origin: right;
+  transform: rotateZ(-45deg);
+  transition-duration: 1s;
+}
+.antiClockwise {
+  width: 100%;
+  transform-origin: right;
+  transform: rotateZ(45deg);
+  transition-duration: 1s;
+}
+.hide {
+  /* display: none; */
+  width: 0%;
+  transition-duration: 1s;
+}
+.sideBarScreen {
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translateX(-100%);
+  transition-duration: 1s;
+}
+.sideBarActive {
+  transform: translateX(0%);
+  transition-duration: 1s;
+}
