@@ -33,7 +33,7 @@ const HeroSection = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.subContainer}>
+      <div className={`${styles.subContainer} ${styles.column}`}>
         <div className={styles.heroText}>
           <p className={styles.introText}>Hi , my name is </p>
           <p

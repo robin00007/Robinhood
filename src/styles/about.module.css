@@ -27,3 +27,29 @@
   margin-right: 10px;
   color: #ff0000 !important;
 }
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .heading {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .bio {
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .technology {
+    margin-top: 20px;
+  }
+  .techIcons {
+    margin-right: 10px;
+    color: #ff0000 !important;
+  }
+}

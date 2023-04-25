@@ -39,3 +39,11 @@
   margin: 15px 0px;
   transform: scale(1.5);
 }
+@media screen and (max-width: 600px) {
+  .container {
+    display: none;
+  }
+  .container2 {
+    display: none;
+  }
+}

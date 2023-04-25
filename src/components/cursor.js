@@ -7,6 +7,7 @@ const Cursor = () => {
 
   return (
     <div
+      className="cursor"
       style={{
         position: "absolute",
         height: "50px",

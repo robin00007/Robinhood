@@ -26,3 +26,15 @@ a {
   background: #555;
   background: #63fbd7;
 }
+
+@media screen and (max-width: 600px) {
+  .cursor {
+    display: none;
+  }
+  * {
+    font-size: 10px;
+  }
+  .column {
+    flex-direction: column !important;
+  }
+}
