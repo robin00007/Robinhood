@@ -3,8 +3,11 @@ import styles from "../styles/header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloudArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { CursorContext } from "./cursorContext";
+import { IoMdCloudDownload } from "react-icons/io";
+
 const Header = () => {
   const names = ["Robinhood", "Javascript", "Reactjs", "Developer", "HTML/CSS"];
+
   const [tags, setTags] = useState("Robinhood");
   setInterval(() => {
     const index = Math.floor(Math.random() * names.length);
@@ -12,7 +15,6 @@ const Header = () => {
   }, 3000);
   const [cursor, setCursor] = useContext(CursorContext);
   const [sideBar, setSideBar] = useState(false);
-  console.log("robin", cursor);
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
@@ -32,14 +34,8 @@ const Header = () => {
             download="Robinhood.pdf"
           >
             Download{" "}
-            <FontAwesomeIcon
-              icon={faCloudArrowDown}
-              size="lg"
-              style={{
-                color: "#ffffff",
-                // transform: "scale(1.5)",
-                backgroundColor: "transparent",
-              }}
+            <IoMdCloudDownload
+              style={{ transform: "scale(1.5)", marginLeft: "5px" }}
             />
           </a>
 

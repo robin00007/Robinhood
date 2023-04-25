@@ -43,25 +43,34 @@
 
 .connectionButton {
   border: none;
-  border: 2px solid #63fbd7;
-
+  /* border: 2px solid #63fbd7; */
   width: fit-content;
-  padding: 20px 40px;
+  /* padding: 20px 40px; */
   background-color: transparent;
   color: #63fbd7;
   margin-top: 30px;
   font-weight: bold;
-  letter-spacing: 2px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
+  letter-spacing: 3px;
+  position: relative;
+}
+.connectionButton::after {
+  content: " ";
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  background-color: wheat;
+  height: 1px;
+  width: 65%;
+  margin-top: 10px;
+  cursor: pointer;
 }
 .connectionButton:hover {
-  /* border: 2px solid #63fbd7; */
-  /* background-color: #63fbd7; */
-  transform: scale(1.2);
+  cursor: pointer;
+}
+.connectionButton:hover::after {
+  width: 100%;
   transition-duration: 1s;
+  cursor: pointer;
 }
 .coffee {
   margin-left: 10px;

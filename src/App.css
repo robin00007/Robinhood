@@ -9,9 +9,20 @@
 }
 body {
   background-color: #10101a;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  background: #63fbd7;
 }
