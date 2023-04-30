@@ -1,11 +1,14 @@
 import "./App.css";
-import { WorkExp } from "./components";
 import {
   CursorContextProvider,
   Header,
   SocialBar,
   HeroSection,
   About,
+  // Projects,
+  WorkExp,
+  Connect,
+  Footer,
 } from "./components";
 import Cursor from "./components/cursor";
 
@@ -19,6 +22,9 @@ function App() {
         <HeroSection />
         <About />
         <WorkExp />
+        {/* <Projects /> */}
+        <Connect />
+        <Footer/>
       </div>
     </CursorContextProvider>
   );

@@ -1,0 +1,84 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.wrapper {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.topic{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px;
+    color: #63fbd7;
+
+}
+.subheading{
+    font-size: 1.5rem;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: rgb(212, 207, 207);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    padding:20px
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width:40%;
+    min-width: 300px;
+}
+label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+input{
+    background-color: transparent;
+    border: none;
+    padding:5px;
+    font-size: 1rem;
+    border-bottom: 1px solid rgb(212, 207, 207);
+}
+.column{
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+}
+.connect{
+    padding : 20px 60px;
+    background-color: transparent;
+    border: 2px solid #63fbd7;
+    color: #63fbd7;
+    font-size:1rem;
+    /* font-weight: semi-bold; */
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+FaRegHandshake{
+    margin-left: 10px;
+}

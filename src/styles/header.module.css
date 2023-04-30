@@ -122,3 +122,10 @@ FontAwesomeIcon {
   transform: translateX(0%);
   transition-duration: 1s;
 }
+
+@media  screen and (max-width:600px) {
+  .navbar{
+    /* width:85%; */
+  }
+  
+}

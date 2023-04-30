@@ -8,7 +8,13 @@
   /* cursor: none !important; */
 }
 body {
-  background-color: #10101a;
+  background-color: rgb(16, 16, 26);
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+
+}
+.App{
+  scroll-snap-type: y mandatory;
   overflow-x: hidden;
 }
 

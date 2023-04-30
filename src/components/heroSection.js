@@ -5,32 +5,9 @@ import { useContext, useEffect, useState } from "react";
 import { CursorContext } from "./cursorContext";
 import HeroImage from "../assets/HeroImage.png";
 import data from "../data/template.json";
-import Repos from "../api/allRepos";
-import PinnedRepo from "../api/pinnedRepo";
-import axios, { all } from "axios";
 const HeroSection = () => {
   const [cursor, SetCursor] = useContext(CursorContext);
   const [tempData, setTempData] = useState({ ...data });
-  const [allRepos, setAllRepos] = useState([]);
-  const handleRepo = async () => {
-    const result = await Repos();
-    const result2 = await PinnedRepo();
-    // setAllRepos([...result, "robin"]);
-    // const result = await axios({
-    //   method: "get",
-    //   url: "https://gh-pinned-repos.egoist.dev/",
-    //   params: {
-    //     username: "robin00007",
-    //   },
-    // });
-    // return result.data;
-    console.log(result);
-    console.log("robin", result2);
-  };
-  useEffect(() => {
-    handleRepo();
-  });
-
   return (
     <div className={styles.container}>
       <div className={`${styles.subContainer} ${styles.column}`}>

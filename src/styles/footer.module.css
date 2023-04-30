@@ -1,0 +1,72 @@
+.container{
+    width: 100vw;
+    padding:60px 10px;
+    /* height: 80vh; */
+    background-color: #598392;
+    background-color:#EFF6E0;
+
+    /* background-color: #66717E; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flag{
+    position: absolute;
+    top: 0%;
+    left:12.5%;
+    width:75%;
+    height:20vh;
+    background-color:#EFF6E0;
+    background-color:#D4D6B9;
+    transform: translateY(-50%);
+    border-radius: 20px;
+}
+.heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:black;
+    margin-bottom: 1rem;
+}
+.subheading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(41, 40, 40);
+}
+.social{
+    margin-top:50px;
+    margin-bottom: 20px;
+}
+.link{
+    padding:10px;
+    border:2px solid rgb(48, 47, 47);
+    border-radius: 50%;
+    margin:10px;
+    aspect-ratio: 1/1 !important;
+    transform: scale(1.2);
+}
+.treat{
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+.treatText{
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    padding:50px;
+}
+.coffee{
+    color: rgb(34, 34, 34);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.coffeeText{
+    color: rgb(93, 92, 92);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.love{
+    color:black
+}

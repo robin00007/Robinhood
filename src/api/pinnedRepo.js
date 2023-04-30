@@ -1,26 +1,16 @@
 import axios from "axios";
 
 const PinnedRepo = async () => {
-  // const obj= {
-  //     user(login: "GabrielBB") {
-  //       pinnedItems(first: 6, types: REPOSITORY) {
-  //         nodes {
-  //           ... on Repository {
-  //             name
-  //           }
-  //         }
-  //       }
-  //     }
-  //   };
   const result = await axios({
     method: "post",
-    headers: {
-      authorization: "bearer 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",
-    },
-    url: "https://api.github.com/graphql",
+    // headers: {
+    //   authorization: "bearer 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",
+    // },
+    url: "https://gh-pinned-repos.egoist.dev/",
     data: {
-      query:
-        '{\n  user(login: "robin00007") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}',
+      params:{
+        username: "robin00007",
+      }
     },
   });
   return result.data;

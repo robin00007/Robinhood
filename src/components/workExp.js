@@ -7,6 +7,7 @@ const WorkExp = () => {
   const [active, setActive] = useState(companies[0]);
   useEffect(() => {
     setInterns({ ...data.experience });
+    setActive(companies[0]);
   }, []);
   return (
     <div className={styles.container}>
@@ -15,12 +16,13 @@ const WorkExp = () => {
         <div className={styles.Card}>
           <div className={styles.nameCard}>
             {companies.length > 0
-              ? companies.map((company) => {
+              ? companies.map((company,index) => {
                   return (
                     <div
                       className={`${styles.companyPill} ${
                         company === active ? styles.active : null
                       }`}
+                      key={index}
                       onClick={() => {
                         setActive(company);
                       }}
@@ -32,7 +34,7 @@ const WorkExp = () => {
               : null}
           </div>
           <div className={styles.detailCard}>
-            <p className={styles.role}>
+            <div className={styles.role}>
               {" "}
               {interns[active]?.role
                 ? interns[active]?.role
@@ -44,7 +46,7 @@ const WorkExp = () => {
                   ? interns[active]?.name
                   : "company name missing "}
               </p>
-            </p>
+            </div>
             <p className={styles.duration}>
               {interns[active]?.duration.from
                 ? interns[active]?.duration.from
@@ -56,8 +58,12 @@ const WorkExp = () => {
             </p>
             <div className={styles.points}>
               {interns[active]?.points.length > 0
-                ? interns[active]?.points.map((point) => {
-                    return <li className={styles.point}>{point}</li>;
+                ? interns[active]?.points.map((point, index) => {
+                    return (
+                      <li className={styles.point} key={index}>
+                        {point}
+                      </li>
+                    );
                   })
                 : null}
             </div>
