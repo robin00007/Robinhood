@@ -24,7 +24,7 @@ function App() {
         
         
         <WorkExp />
-        <Projects />
+        {/* <Projects /> */}
         <Connect />
         <Footer/>
       </div>
