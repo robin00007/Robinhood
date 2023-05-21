@@ -11,23 +11,23 @@ const SocialBar = () => {
   return (
     <div className="mainContainer">
       <div className={styles.container}>
-        <a href="https://www.google.com" className={styles.socialIcon}>
+        <a href={data.socialUrl.github ? data.socialUrl.github : null } className={styles.socialIcon}>
           {" "}
           <BsGithub color="red" />
         </a>
-        <a href="https://www.google.com" className={styles.socialIcon}>
+        <a href={data.socialUrl.linkedin ? data.socialUrl.linkedin : null } className={styles.socialIcon} >
           {" "}
           <BsLinkedin />
         </a>
-        <a href="https://www.google.com" className={styles.socialIcon}>
+        <a href={data.socialUrl.instagram ? data.socialUrl.instagram : null } className={styles.socialIcon} >
           {" "}
           <RiInstagramFill />
         </a>
-        <a href="https://www.google.com" className={styles.socialIcon}>
+        <a href={data.socialUrl.twitter ? data.socialUrl.twitter : null } className={styles.socialIcon} >
           {" "}
           <AiFillTwitterCircle />
         </a>
-        <a href="https://www.google.com" className={styles.socialIcon}>
+        <a href="mailto:robinhood19062002@gmail.com" className={styles.socialIcon}>
           {" "}
           <IoIosMail />
         </a>

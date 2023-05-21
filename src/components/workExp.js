@@ -8,6 +8,7 @@ const WorkExp = () => {
   useEffect(() => {
     setInterns({ ...data.experience });
     setActive(companies[0]);
+    
   }, []);
   return (
     <div className={styles.container}>

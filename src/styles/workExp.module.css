@@ -3,6 +3,7 @@
   width: 100vw;
   display: flex;
   justify-content: center;
+  scroll-snap-align: center;
 }
 .wrapper {
   width: 75%;

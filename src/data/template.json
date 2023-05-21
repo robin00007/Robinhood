@@ -1,28 +1,29 @@
 {
   "name": "Robin Choudhary",
+  "discripton":"My name is Robin and I am a recent graduate from the Army Institute of Technology. Currently, I am working as a Front End Lead at Google Developer Student Club AIT Pune. During my tenure, I have gained a deep understanding of front-end development technologies and have worked on multiple projects related to web development, including developing and maintaining websites, web applications .",
   "socialUrl": {
-    "github": " ",
-    "linkedin": " ",
+    "github": "https://github.com/robin00007",
+    "linkedin": "www.linkedin.com/in/robinhood00007",
     "twitter": " ",
     "facebook": " ",
     "instagram": " ",
-    "youtube": " ",
-    "website": " "
+    "youtube": "https://www.youtube.com/@theprogrammer2736",
+    "website": "https://www.robinchoudhary.me"
   },
   "phoneNo": "+91-7425954877",
   "College": "army institute of technology, pune",
   "email": "robinhood19062002@gmail.com",
-  "resumePdfUrl": "https:/",
+  "resumePdfUrl": "https://drive.google.com/file/u/2/d/1AtoGsPUhdzopmL4ib-NPJL2tqoiIW9bw/view?usp=share_link",
   "profileImageUrl": null,
   "githubUsername": "robin00007",
   "about": "Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS! :::Fast-forward to today, and I’ve had the privilege of working at an advertising agency,a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.",
   "experience": {
-    "microsoft": {
-      "name": "microsoft",
-      "role": "Software Engineer Intern",
+    "GDSC Ait": {
+      "name": "GDSC Ait",
+      "role": "Front-end Lead",
       "duration": {
-        "from": "May 2018",
-        "to": "Aug 2018"
+        "from": "May 2022",
+        "to": "may 2023"
       },
       "points": [
         "Worked on a project to create a web application for a client to manage their data and create reports.",
@@ -31,12 +32,12 @@
         "Worked on a project to create a web application for a client to manage their data and create reports."
       ]
     },
-    "apple": {
-      "name": "apple",
-      "role": "Software Engineer Intern",
+    "Byte Brackets": {
+      "name": "Byte Brackets",
+      "role": "Reactjs Intern",
       "duration": {
-        "from": "May 2018",
-        "to": "Aug 2018"
+        "from": "Aug 2022",
+        "to": "Dev 2022"
       },
       "points": [
         "Worked on a project to create a web application for a client to manage their data and create reports.",
@@ -45,8 +46,8 @@
         "Worked on a project to create a web application for a client to manage their data and create reports."
       ]
     },
-    "Google": {
-      "name": "google",
+    "Nits it sol": {
+      "name": "Nits it sol",
       "role": "Software Engineer Intern",
       "duration": {
         "from": "May 2018",

@@ -5,7 +5,7 @@ import {
   SocialBar,
   HeroSection,
   About,
-  // Projects,
+  Projects,
   WorkExp,
   Connect,
   Footer,
@@ -19,10 +19,12 @@ function App() {
       <div className="App">
         <SocialBar />
         <Header />
-        <HeroSection />
-        <About />
+        <div><HeroSection /></div>
+        <div><About /></div>
+        
+        
         <WorkExp />
-        {/* <Projects /> */}
+        <Projects />
         <Connect />
         <Footer/>
       </div>

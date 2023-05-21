@@ -11,17 +11,11 @@ const About = () => {
       <div className={styles.wrapper}>
         <p className={styles.heading}>About me</p>
         <p className={styles.bio}>
-          Hello! My name is Brittany and I enjoy creating things that live on
-          the internet. My interest in web development started back in 2012 when
-          I decided to try editing custom Tumblr themes — turns out hacking
-          together a custom reblog button taught me a lot about HTML & CSS!
+        My name is Robin and I am a persuing my under-graduation from the Army Institute of Technology. Currently, I had working as a Front End Lead at Google Developer Student Club AIT Pune. During my tenure, I have gained a deep understanding of front-end development technologies and have worked on multiple projects related to web development, including developing and maintaining websites, web applications .
+
         </p>
         <p className={styles.bio}>
-          Fast-forward to today, and I’ve had the privilege of working at an
-          advertising agency,a start-up, a huge corporation, and a student-led
-          design studio. My main focus these days is building accessible,
-          inclusive products and digital experiences at Upstatement for a
-          variety of clients.
+        I am proficient in React JS, HTML5, CSS3, JavaScript, and have hands-on experience in using Nextjs . I am also familiar with modern development tools such as Git, NPM, Webpack, and Babel. I have strong problem-solving skills, and I am confident that I can contribute positively to your company's growth.
         </p>
         <div className={styles.technology}>
           <FaReact

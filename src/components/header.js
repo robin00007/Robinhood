@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloudArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { CursorContext } from "./cursorContext";
 import { IoMdCloudDownload } from "react-icons/io";
+import data from "../data/template.json";
+
 
 const Header = () => {
   const names = ["Robinhood", "Javascript", "Reactjs", "Developer", "HTML/CSS"];
@@ -21,7 +23,7 @@ const Header = () => {
         <div className={styles.roller}>{"Robinhood"}</div>
         <div className={styles.menuButton}>
           <a
-            href="https://drive.google.com/file/u/2/d/1AtoGsPUhdzopmL4ib-NPJL2tqoiIW9bw/view?usp=share_link"
+            href={data.profileImageUrl}
             // target={"_blank"}
             className={styles.download}
             onClick={() => {}}

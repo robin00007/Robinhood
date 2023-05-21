@@ -14,10 +14,12 @@ body {
 
 }
 .App{
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: both mandatory;
   overflow-x: hidden;
 }
-
+.App div{
+  scroll-snap-align: center;
+}
 a {
   text-decoration: none;
   cursor: pointer;
