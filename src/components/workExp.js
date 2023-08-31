@@ -3,8 +3,8 @@ import styles from "../styles/workExp.module.css";
 import data from "../data/template.json";
 const WorkExp = () => {
   const [interns, setInterns] = useState({});
-  const companies = Object.keys(interns);
-  const [active, setActive] = useState(companies[0]);
+  let companies=Object.keys(data.experience);
+  const [active, setActive] = useState({});
   useEffect(() => {
     setInterns({ ...data.experience });
     setActive(companies[0]);
@@ -16,7 +16,7 @@ const WorkExp = () => {
         <div className={styles.heading}>Work Experience</div>
         <div className={styles.Card}>
           <div className={styles.nameCard}>
-            {companies.length > 0
+            {companies?.length > 0
               ? companies.map((company,index) => {
                   return (
                     <div

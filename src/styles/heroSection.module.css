@@ -113,7 +113,7 @@
 @media screen and (max-width: 600px) {
   .subContainer {
     width: 85%;
-    overflow: hidden;
+    /* overflow-x: hidden; */
     flex-wrap: wrap;
   }
   .heroText {
@@ -133,6 +133,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top:40px;
   }
   .bio {
     width: 85%;
